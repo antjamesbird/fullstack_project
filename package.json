@@ -1,0 +1,31 @@
+{
+  "name": "fullstack_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && nodemon index.js",
+    "react-start": "cd client && npm run start",
+    "dev": "concurrently \"npm run server\" \"npm run react-start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antjamesbird/fullstack_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antjamesbird/fullstack_project/issues"
+  },
+  "homepage": "https://github.com/antjamesbird/fullstack_project#readme",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.9.3",
+    "apollo-server": "^2.17.0",
+    "graphql": "^15.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}

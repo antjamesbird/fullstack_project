@@ -1,8 +1,6 @@
 ## Fullstack Project
 
 <h3>::About::</h3>
-<br />
-<br />
 This is a fullstack application using Apollo Server, Apollo Client, React and Typescript.
 The Apollo Server wraps the Chuck Norris Api `https://api.chucknorris.io/`
 <br />

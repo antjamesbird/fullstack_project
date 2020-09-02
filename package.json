@@ -7,6 +7,7 @@
     "server": "cd server && nodemon index.js",
     "react-start": "cd client && npm run start",
     "dev": "concurrently \"npm run server\" \"npm run react-start\"",
+    "build": "concurrently \"npm run server\" \"cd client && npm run build\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

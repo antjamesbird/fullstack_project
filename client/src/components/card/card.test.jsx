@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Card from "./card";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Card from './card';
 import renderer from "react-test-renderer";
 
 test("Renders the Card component", () => {

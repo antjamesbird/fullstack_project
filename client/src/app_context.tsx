@@ -1,4 +1,4 @@
-import React, { useState, Dispatch } from "react";
+import React, { useState, Dispatch } from 'react';
 
 interface ContextProps {
     jokeActive: boolean;

@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { gql, useQuery } from "@apollo/client";
+import React, { useContext } from 'react';
+import { gql, useQuery } from '@apollo/client';
 import "./joke.css";
-import { AppContext } from "../../app_context";
-import Loader from "./../loader/loader";
-import Modal from "./../styled_components/modal";
+import { AppContext } from '../../app_context';
+import Loader from '../loader/loader';
+import Modal from '../styled_components/modal';
 
 const GET_JOKE = gql`
   query Joke($category: String!) {

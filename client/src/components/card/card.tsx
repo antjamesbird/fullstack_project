@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { AppContext } from "./../../app_context";
-import CardHeading from "./../styled_components/card_heading";
+import React, { useContext } from 'react';
+import { AppContext } from '../../app_context';
+import CardHeading from '../styled_components/card_heading';
 import "./card.css";
 
 interface Props {

@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import Joke from "../joke/joke";
-import { AppContext } from "../../app_context";
+import React, { useContext } from 'react';
+import Joke from '../joke/joke';
+import { AppContext } from '../../app_context';
 
 const JokeDisplay = () => {
   const appContext = useContext(AppContext);

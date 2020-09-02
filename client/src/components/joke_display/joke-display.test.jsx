@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import JokeDisplay from "./joke-display";
-import renderer from "react-test-renderer";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import JokeDisplay from './joke-display';
+import renderer from 'react-test-renderer';
 
 test("Renders the the Joke Display component", () => {
   const div = document.createElement("div");

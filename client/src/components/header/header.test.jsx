@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Header from "./header";
-import renderer from "react-test-renderer";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './header';
+import renderer from 'react-test-renderer';
 
 test("Renders the header component", () => {
   const div = document.createElement("div");

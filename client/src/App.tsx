@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 import { gql, useQuery } from "@apollo/client";
-import Card from "./components/card";
-import Header from "./components/header";
-import JokeDisplay from "./components/joke-display";
-import Loading from "./components/loader";
+import Card from "./components/card/card";
+import Header from "./components/header/header";
+import JokeDisplay from "./components/joke_display/joke-display"
+import Loading from "./components/loader/loader";
 import { AppProvider } from "./app_context";
+import Heading from "./components/styled_components/heading";
 
 import "./App.css";
 
@@ -50,7 +51,7 @@ const Categories: React.FC = () => {
       <AppProvider>
         <JokeDisplay/>
         <Header />
-        <h1 className="main">select a category..</h1>
+        <Heading>select a category..</Heading>
         <div className="card-wrap">
           {data.categories &&
             keys.map((category: string) => (

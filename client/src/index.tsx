@@ -6,7 +6,7 @@ import {
 } from "@apollo/client";
 import React from "react";
 import ReactDOM from "react-dom";
-import Categories from "./Categories";
+import App from "./App";
 import "./index.css";
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
@@ -16,7 +16,7 @@ const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <Categories />
+    <App />
   </ApolloProvider>,
   document.getElementById("root")
 );

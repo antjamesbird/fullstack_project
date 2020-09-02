@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { gql, useQuery } from "@apollo/client";
 import "./joke.css";
-import { AppContext } from "../app_context";
-import Loader from "./loader";
+import { AppContext } from "../../app_context";
+import Loader from "./../loader/loader";
+import Modal from "./../styled_components/modal";
 
 const GET_JOKE = gql`
   query Joke($category: String!) {
@@ -32,13 +33,13 @@ const Joke: React.FC<Props> = ({ category }) => {
   };
 
   if (loading) return <Loader />;
-  if (error) return <p className="error"></p>;
+  if (error) return <p className="error">ERROR</p>;
   if (!data) return <p>Not found</p>;
 
   const { value } = data.joke;
 
   return (
-    <div id="myModal" className="modal">
+    <Modal>
       <div className="modal-content">
         <span onClick={handleClick} className="close">&times;</span>
         <h1>{appContext.selectedCategory}</h1>
@@ -46,7 +47,7 @@ const Joke: React.FC<Props> = ({ category }) => {
         <h2 className="quote">{value}</h2>
         <p className="author">Author Unknown</p>
       </div>
-    </div>
+    </Modal>
   );
 };
 

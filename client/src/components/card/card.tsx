@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { AppContext } from "./../app_context";
+import { AppContext } from "./../../app_context";
+import CardHeading from "./../styled_components/card_heading";
 import "./card.css";
 
 interface Props {
@@ -17,7 +18,7 @@ const Card: React.FC<Props> = ({ category }) => {
   return (
     <div className="card">
       <div className="text">
-        <h3>{ category }</h3>
+        <CardHeading>{ category }</CardHeading>
         <hr />
         <button className="btn orange" onClick={handleClick}>View</button>
       </div>

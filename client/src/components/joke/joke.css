@@ -1,5 +1,5 @@
 /* The Modal (background) */
-.modal {
+/* .modal {
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -9,7 +9,7 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 /* Modal Content f26419  */
 .modal-content {
@@ -37,7 +37,6 @@
 
 h1 {
   color: #f25a23;
-  padding-left: 30px;
 }
 
 h2 {

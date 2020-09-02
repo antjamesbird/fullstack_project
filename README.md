@@ -10,7 +10,9 @@ The Apollo Server wraps the Chuck Norris Api `https://api.chucknorris.io/`</p>
 
 <p>How to get up and running?</p>
 
-<p>Run `npm install` in the project root and `npm install` in the client directory</p>
+<p>Run `npm run setup` from the root directory. This will install all the client and server dependencies and node modules</p>
+
+### `npm run setup`
 
 <p>The App uses concurrently to run the server and client `https://www.npmjs.com/package/concurrently`</p>
 
